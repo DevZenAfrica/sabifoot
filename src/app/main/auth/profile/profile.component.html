@@ -21,7 +21,7 @@
     </div>
     <div class="profile-right">
       <a (click)="$event.stopPropagation();inputFile.click();">
-        <img [src]="croppedImage||(current_user.avatar?(current_user.providerId?current_user.avatar:api_url+current_user.avatar):'')||'assets/img/profile.jpg'"
+        <img [src]="croppedImage||(current_user.avatar?(api_url+current_user.avatar):'')||'assets/img/profile.jpg'"
              class="preload-image shadow-large">
       </a>
     </div>
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="input-style input-style-1 input-required">
+        <div class="input-style input-style-1">
             <span class="input-style-1-active input-style-1-inactive">
               {{'views.select_lang' | translate}}
             </span>
@@ -60,7 +60,7 @@
           </select>
         </div>
 
-        <div class="input-style has-icon input-style-1 input-required">
+        <div class="input-style has-icon input-style-1">
           <div class="input-container">
             <i class="fa fa-phone"></i>
           </div>
@@ -81,7 +81,7 @@
         </div>
 
         <div>
-          <div class="input-style has-icon input-style-1 input-required">
+          <div class="input-style has-icon input-style-1">
             <i class="input-icon fa fa-universal-access font-11"></i>
             <span>{{'views.player_name'|translate}}</span>
             <em>({{'views.required'|translate}})</em>
@@ -99,7 +99,7 @@
         </div>
 
         <div>
-          <div class="input-style has-icon input-style-1 input-required">
+          <div class="input-style has-icon input-style-1">
             <i class="input-icon fa fa-user font-11"></i>
             <span>{{'views.full_name'|translate}}</span>
             <em>({{'views.required'|translate}})</em>
@@ -130,13 +130,13 @@
             </mat-select>
           </mat-form-field>
 
-          <div *ngIf="city.value=='other'" class="input-style input-style-1 input-required">
+          <div *ngIf="city.value=='other'" class="input-style input-style-1">
             <span>{{'views.other_city'|translate}} </span>
             <input type="text" [placeholder]="'views.other_city'|translate" formControlName="other_city"/>
           </div>
         </div>
 
-        <div class="input-style input-style-1 input-required">
+        <div class="input-style input-style-1">
           <span>{{'views.your_neighborhood'|translate}} </span>
           <input type="text" [placeholder]="'views.your_neighborhood'|translate" formControlName="neighborhood"/>
         </div>

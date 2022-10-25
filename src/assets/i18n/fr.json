@@ -1,5 +1,5 @@
 {
-    "name": "SABE FOOT QUIZ",
+    "name": "SABIFOOT QUIZ",
     "base": {
         "new_game": "Nouveau <br> Jeu",
         "rank_top_30": "Classement <br> Top 30",
@@ -113,7 +113,7 @@
         "status_invitation": "Statut : Invitation",
         "in_class": "En cour ...",
         "accepted": "Accepté",
-        "message_invite": "{{name}} vous invite à participer au Grand Quiz des SABI FOOT. 100 000 FCFA à gagner. Releve le défi, cliquez ici {{link}} -> Inscrit toi et challenge avec la communauté. #GrandQuiz",
+        "message_invite": "{{name}} vous invite à participer au Grand Quiz des SABI FOOT. 100 000 FCFA à gagner. Releve le défi, cliquez ici {{link}} -> Inscrit toi et challenge avec la communauté. #QuizAfrica",
         "link_url": "https://foot.quizzafrica.com/quiz?p={{key_code}}",
         "not_data_found": "Aucune invitation disponible"
     },
